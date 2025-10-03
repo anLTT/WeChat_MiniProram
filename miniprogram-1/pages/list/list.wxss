@@ -26,7 +26,7 @@
   height: 100px;
   text-align: center;
   line-height: 100px;
-  display: inline-block;
+  display: inline-block;/*横向滚动时需要加,防止自动换行*/
 }
 
 .container2 view:nth-child(1){
@@ -43,7 +43,26 @@
   border:1px solid  red;
   width: 120px;
   height: 100px;
-  white-space:nowrap;
+  white-space:nowrap;/*横向滚动时需要加*/
 }
-/* 
-想实现横向滚动还需要父元素 子元素  */
+
+/* 类名选择用. */
+.swiper-container{
+  height: 150px;
+}
+/* 类名选择器选中所有item */
+.item{
+  height: 100%;/*100%充满父容器高度*/
+  line-height: 150px;/*文本纵向居中(因为一共也就150px)*/
+  text-align: center;/*横向居中*/
+}
+/* 给每个swiper的item的各个子类加外观 */
+swiper-item:nth-child(1) .item{/*为什么还要加.item?    还必须各一个空格*/
+  background-color: darkorange;
+}
+swiper-item:nth-child(2) .item{
+  background-color:darkseagreen;
+}
+swiper-item:nth-child(3) .item{
+  background-color:darksalmon;
+}

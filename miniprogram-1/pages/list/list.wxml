@@ -10,3 +10,26 @@
   <view>B</view>
   <view>C</view>
 </scroll-view>
+
+
+<!-- 轮播图
+好像要class=""后才能在wxss里面用"."调用 -->
+<!-- 1.总的最外层的结构
+2.有几个轮播图就放几个  <swiper-item></swiper-item>
+3.每个item里可以是view也可以是图片
+4.在wxss里面加外观 -->
+<swiper class="swiper-container">
+  <!-- 每个轮播图item里放view -->
+  <swiper-item>
+    <!-- view里加class样式 -->
+    <view class="item">A</view>
+  </swiper-item>
+
+  <swiper-item>
+    <view class="item">B</view>
+  </swiper-item>
+ 
+  <swiper-item>
+    <view class="item">C</view>
+  </swiper-item>
+</swiper>
