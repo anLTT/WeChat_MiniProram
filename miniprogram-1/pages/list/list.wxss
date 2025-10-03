@@ -1,0 +1,49 @@
+/* pages/list/list.wxss */
+.container1 view{
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+}
+
+.container1 view:nth-child(1){
+  background-color:bisque;
+}
+.container1 view:nth-child(2){
+  background-color:azure ;
+}
+.container1 view:nth-child(3){
+  background-color: aliceblue;
+}
+
+.container1{
+  display:flex;
+  justify-content: space-around;
+}
+
+.container2 view{
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  display: inline-block;
+}
+
+.container2 view:nth-child(1){
+  background-color:bisque;
+}
+.container2 view:nth-child(2){
+  background-color:azure ;
+}
+.container2 view:nth-child(3){
+  background-color: aliceblue;
+}
+
+.container2{
+  border:1px solid  red;
+  width: 120px;
+  height: 100px;
+  white-space:nowrap;
+}
+/* 
+想实现横向滚动还需要父元素 子元素  */
