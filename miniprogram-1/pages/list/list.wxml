@@ -21,7 +21,30 @@
 2.有几个轮播图就放几个  <swiper-item></swiper-item>
 3.每个item里可以是view也可以是图片
 4.在wxss里面加外观 -->
+<!--
 <swiper class="swiper-container">
+   /*每个轮播图item里放view*/ 
+  <swiper-item>
+  /*view里加class样式*/
+    <view class="item">A</view>
+  </swiper-item>
+
+  <swiper-item>
+    <view class="item">B</view>
+   </swiper-item>
+ 
+  <swiper-item>
+    <view class="item">C</view>
+  </swiper-item>
+</swiper> 
+-->
+
+<!-- 轮播图属性-->
+<!-- 是否显示面板的小圆点     并且可以设置颜色(颜色不设置的话有默认的)-->
+                            <!-- 自动切换  autoplay -->
+                            <!-- 切换时间间隔(没有就默认5s),单位ms -->
+                            <!-- 是否衔接滑动 circular 从尾到头-->
+<swiper class="swiper-container" indicator-dots indicator-color="gray" indicator-active-color="green" autoplay interval="3000" circular>
   <!-- 每个轮播图item里放view -->
   <swiper-item>
     <!-- view里加class样式 -->
