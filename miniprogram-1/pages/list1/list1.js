@@ -5,7 +5,13 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+      // 字符串
+      info:'hello world',
+      // 图片
+      imgSrc:'http://www.itheima.com/images/logo.png',
+      // 运算
+      randomNUM: Math.random() *10,   //0~10之间的小数,例如8.95659350894697
+      randomNUM1: Math.random().toFixed(2)  //0~1之间的两位小数
   },
 
   /**

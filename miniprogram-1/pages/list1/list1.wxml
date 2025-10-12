@@ -32,3 +32,24 @@
   <!-- <image src="/images/圆.jpg" mode="aspectFill"/>   缺点:图片会被裁剪> -->
   <!-- <image src="/images/圆.jpg" mode="widthFix"/>   原图宽度不变,然后整个图高度按比例被拉长 -->
   <!-- <image src="/images/圆.jpg" mode="heightFix"/>   原图高度不变,然后整个图宽度按比例被拉长 -->
+
+
+<!-- 三类API
+1.事件监听API
+    特点:以on开头,监听事件的触发
+2.同步API
+    特点:1.以Sync结尾
+    特点2:执行结果可以由函数返回值获取,可知结果是否异常
+3.异步API
+    特点:需通过success,fail,complete回调函数接收调用的结果 -->
+
+
+
+<!-- 数据绑定,在.js的data里面声明 -->
+<view>{{info}}</view>
+
+<image src="{{imgSrc}}" mode=""/>
+<!-- 页面显示判断结果 -->
+<!-- <view>randomNUM的结果是:{{randomNUM}}</view> -->
+<view>{{randomNUM >=5 ? '随机数大于5' : '随机数小于5'}}</view>
+<view>生成100以内的随机数:{{randomNUM1 * 100}}</view>
