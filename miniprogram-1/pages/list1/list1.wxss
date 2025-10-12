@@ -1,0 +1,8 @@
+/* pages/list1/list1.wxss */
+
+/* 加图片边框线 */
+image{
+  /* border: solid blue; */
+  border:1px solid blue;
+  
+}

@@ -69,3 +69,4 @@
 <text selectable>123456</text>
 <!-- rich-text   文字进行渲染 -->
 <rich-text nodes="<h1 style='color:red;'>请输入文本</h1>"/>
+

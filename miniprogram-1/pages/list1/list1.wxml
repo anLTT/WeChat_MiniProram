@@ -1,0 +1,34 @@
+<!--pages/list1/list1.wxml-->
+
+<!-- button  按钮组件 -->
+<!-- 
+<view>~~~~~~~~通过type指定按钮类型~~~~~~~~~~~</view>
+<button>默认按钮</button>
+<button type="primary">主色调按钮</button>
+<button type="warn">警告按钮</button>
+
+<view>~~~~~~~~size="mini"小尺寸按钮~~~~~~~~</view>
+<button size="mini">默认按钮</button>
+<button type="primary" size="mini">主色调按钮</button>
+<button type="warn" size="mini">警告按钮</button>
+
+<view>~~~~~~~~plain镂空按钮~~~~~~~~</view>
+<button size="mini" plain>默认按钮</button>
+<button type="primary" size="mini" plain>主色调按钮</button>
+<button type="warn" size="mini" plain>警告按钮</button> -->
+
+<!-- image  图片组件 -->
+
+<!-- 1.空图片 -->
+<!-- 教了第二种,然后第一种是自动补全的,也能用
+  <image src="" mode=""/>
+<image></image> 
+-->
+<!-- 2.指定路径图片 -->
+<!-- wxss里面加边框线 -->
+<!-- <image src="/images/圆.jpg" mode=""/> -->
+  <!-- 可以看出图片显示比例怪怪的,这是mode的作用 -->
+  <!-- <image src="/images/圆.jpg" mode="aspectFit"/>   缺点:边有空白间隙> -->
+  <!-- <image src="/images/圆.jpg" mode="aspectFill"/>   缺点:图片会被裁剪> -->
+  <!-- <image src="/images/圆.jpg" mode="widthFix"/>   原图宽度不变,然后整个图高度按比例被拉长 -->
+  <!-- <image src="/images/圆.jpg" mode="heightFix"/>   原图高度不变,然后整个图宽度按比例被拉长 -->
